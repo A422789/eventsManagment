@@ -82,7 +82,8 @@ export const EventsContextProvider = ({ children }) => {
   const contextValue = {
     events,      
     addEvent,     
-    updateEvent,  
+    updateEvent,
+    deleteEvent,  
     loading      
   };
 
