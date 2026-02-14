@@ -71,10 +71,11 @@ const Page1 = () => {
 
   return (
     <div className="min-h-screen bg-[#121212] text-[#e0e0e0] p-4 md:p-8">
-      <div className="flex flex-col md:flex-row gap-6 max-w-7xl mx-auto">
+      <div className="flex flex-col md:flex-row gap-6 max-w-7xl mx-auto 
+      ">
         
        
-        <div className="w-full md:w-1/4 bg-[#1e1e1e] rounded-xl p-6 shadow-2xl border border-[#333] h-fit md:h-[85vh] overflow-y-auto">
+        <div className="w-full md:w-3/8 bg-[#1e1e1e] rounded-xl p-6 shadow-2xl border border-[#333] h-fit md:h-[85vh] overflow-y-auto">
           <h2 className="text-[#bb86fc] text-xl font-bold text-center mb-6 border-b border-[#333] pb-4">
             Events List ({events.length})
           </h2>
@@ -122,7 +123,8 @@ const Page1 = () => {
         </div>
 
  
-        <div className="flex-1 bg-[#1e1e1e] rounded-xl p-4 shadow-2xl border border-[#333] overflow-hidden custom-calendar">
+       <div className='overflow-auto w-full'>
+         <div className="flex-1 bg-[#1e1e1e] rounded-xl p-4 shadow-2xl border border-[#333] min-w-[650px] md:min-w-0 custom-calendar">
           <FullCalendar
             plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
             headerToolbar={{
@@ -150,6 +152,7 @@ const Page1 = () => {
             }}
           />
         </div>
+       </div>
       </div>
 
 

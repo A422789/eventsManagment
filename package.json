@@ -1,10 +1,10 @@
 {
-  "name": "admin-dashboard",
+  "name": "eventsManagment",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://A422789.github.io/Advance_DashBoard",
- "scripts": {
+  "homepage": "https://github.com/A422789/eventsManagment",
+  "scripts": {
   "dev": "vite",
   "build": "vite build",
   "predeploy": "npm run build",
